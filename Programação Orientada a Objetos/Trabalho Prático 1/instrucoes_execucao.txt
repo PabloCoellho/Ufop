@@ -1,0 +1,4 @@
+Instruções de execução utilizando Makefile: make all
+Instruções de execução sem Makefile:
+g++ main.cpp imovel.cpp apartamento.cpp casa.cpp chacara.cpp -o main
+./main 
