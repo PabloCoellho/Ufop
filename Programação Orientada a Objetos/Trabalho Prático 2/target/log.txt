@@ -1,0 +1,377 @@
+Proprietario: Kurt Turnbull 
+Preco: R$270000,000000 
+Numero de quartos: 2 
+Rua: The Lawns 
+Bairro: West Cardoon 
+Cidade: Mobile 
+Tem elevador
+
+Proprietario: Tyrell Tang 
+Preco: R$315000,000000 
+Numero de quartos: 3 
+Rua: Back Road 
+Bairro: King Point 
+Cidade: Thompson 
+Andares: 1
+
+Proprietario: Niyah Lewis 
+Preco: R$550000,000000 
+Numero de quartos: 4 
+Rua: Blenheim Close 
+Bairro: Larch Gardens 
+Cidade: Orford 
+Andares: 2
+
+Proprietario: Libbie Reilly 
+Preco: R$280000,000000 
+Numero de quartos: 2 
+Rua: Rose Street 
+Bairro: Prospect Place 
+Cidade: Hoquiam 
+Tem elevador
+
+Proprietario: Szymon Gallegos 
+Preco: R$800000,000000 
+Numero de quartos: 5 
+Rua: Seymour Road 
+Bairro: Saddle Forest 
+Cidade: Saint Boniface 
+Tem piscina
+
+Proprietario: Lila Ellison 
+Preco: R$195000,000000 
+Numero de quartos: 2 
+Rua: Orchard Way 
+Bairro: Ripple Point 
+Cidade: Chulmleigh 
+Tem elevador
+
+Proprietario: Tomi French 
+Preco: R$160000,000000 
+Numero de quartos: 1 
+Rua: Waverley Road 
+Bairro: Fort Nutmeg 
+Cidade: Newton-le-Willows 
+Não tem elevador
+
+
+Proprietario: Amani Riley 
+Preco: R$300000,000000 
+Numero de quartos: 2 
+Rua: Broadway 
+Bairro: Teal Square 
+Cidade: Penrith 
+Andares: 1
+
+Proprietario: Menaal Keeling 
+Preco: R$600000,000000 
+Numero de quartos: 3 
+Rua: Laburnum Grove 
+Bairro: Mount Woodruff 
+Cidade: Higham Ferrers 
+Não tem piscina
+
+
+Proprietario: Darragh Benton 
+Preco: R$180000,000000 
+Numero de quartos: 1 
+Rua: Bridge Street 
+Bairro: Annatto City 
+Cidade: Staunton 
+Não tem elevador
+
+
+Proprietario: Damien Boyce 
+Preco: R$900000,000000 
+Numero de quartos: 3 
+Rua: Elm Close 
+Bairro: Sallow Plains 
+Cidade: Great Dunmow 
+Andares: 3
+
+Proprietario: Nina Hunter 
+Preco: R$500000,000000 
+Numero de quartos: 2 
+Rua: Parsonage Lane 
+Bairro: Maroon Hook 
+Cidade: Cherokee 
+Tem elevador
+
+Proprietario: Simone Ashley 
+Preco: R$255000,000000 
+Numero de quartos: 2 
+Rua: Wisdom 
+Bairro: Parsonage Lane 
+Cidade: Penrith 
+Andares: 1
+
+Proprietario: Millie-Mae Carr 
+Preco: R$265000,000000 
+Numero de quartos: 2 
+Rua: Mary Street 
+Bairro: Myers Falls 
+Cidade: Eastchester 
+Tem elevador
+
+Proprietario: Lila Ellison 
+Preco: R$236000,000000 
+Numero de quartos: 3 
+Rua: Back Road 
+Bairro: Saddle Forest 
+Cidade: Orford 
+Tem piscina
+
+Proprietario: Kendall Muir 
+Preco: R$200000,000000 
+Numero de quartos: 1 
+Rua: Kings Road 
+Bairro: Amethyst Point 
+Cidade: Shiprock 
+Tem elevador
+
+Proprietario: Georgina Hendrix 
+Preco: R$290000,000000 
+Numero de quartos: 2 
+Rua: Woodhouse Lane 
+Bairro: Queen Bay 
+Cidade: Busselton 
+Andares: 1
+
+Proprietario: Simone Ashley 
+Preco: R$770000,000000 
+Numero de quartos: 4 
+Rua: Windmill Lane 
+Bairro: Teal Wharf 
+Cidade: Uckfield 
+Andares: 2
+
+Proprietario: Simone Ashley 
+Preco: R$455000,000000 
+Numero de quartos: 3 
+Rua: Winterfield 
+Bairro: Aston 
+Cidade: Eastchester 
+Andares: 1
+
+Proprietario: Amani Riley 
+Preco: R$100000,000000 
+Numero de quartos: 2 
+Rua: Back Road 
+Bairro: Saddle Forest 
+Cidade: Saint Boniface 
+Não tem piscina
+
+
+Proprietario: Amani Riley 
+Preco: R$670000,000000 
+Numero de quartos: 4 
+Rua: Seymour Road 
+Bairro: West Cardoon 
+Cidade: Great Dunmow 
+Tem elevador
+
+Proprietario: Lila Ellison 
+Preco: R$275000,000000 
+Numero de quartos: 2 
+Rua: Stark Road 
+Bairro: Ripple Park 
+Cidade: Hoquiam 
+Tem elevador
+
+Proprietario: Lila Ellison 
+Preco: R$170000,000000 
+Numero de quartos: 2 
+Rua: Fisher Square 
+Bairro: Hansa Plaza 
+Cidade: Staunton 
+Não tem elevador
+
+
+Proprietario: Georgina Hendrix 
+Preco: R$332000,000000 
+Numero de quartos: 4 
+Rua: Hoffman Road 
+Bairro: West Cardoon 
+Cidade: Staunton 
+Tem elevador
+
+Proprietario: Darragh Benton 
+Preco: R$355000,000000 
+Numero de quartos: 3 
+Rua: Columbus Ave 
+Bairro: Denton 
+Cidade: Eastchester 
+Andares: 1
+
+Proprietario: Tomi French 
+Preco: R$615000,000000 
+Numero de quartos: 3 
+Rua: Norton 
+Bairro: Lower Byzantine 
+Cidade: Chulmleigh 
+Andares: 1
+
+Proprietario: Tomi French 
+Preco: R$421000,000000 
+Numero de quartos: 4 
+Rua: Seymour Road 
+Bairro: West Cardoon 
+Cidade: Great Dunmow 
+Tem elevador
+
+Proprietario: Simone Ashley 
+Preco: R$295000,000000 
+Numero de quartos: 2 
+Rua: Amazon 
+Bairro: Cobalt Walk 
+Cidade: Mobile 
+Andares: 1
+
+Proprietario: Nina Hunter 
+Preco: R$333000,000000 
+Numero de quartos: 2 
+Rua: Sailor Field 
+Bairro: Lower Byzantine 
+Cidade: Busselton 
+Tem elevador
+
+Proprietario: Nina Hunter 
+Preco: R$743000,000000 
+Numero de quartos: 4 
+Rua: Square Park 
+Bairro: West Cardoon 
+Cidade: Great Dunmow 
+Tem elevador
+
+Proprietario: Libbie Reilly 
+Preco: R$223000,000000 
+Numero de quartos: 3 
+Rua: Turton 
+Bairro: Aston 
+Cidade: Uckfield 
+Andares: 1
+
+Proprietario: Szymon Gallegos 
+Preco: R$245000,000000 
+Numero de quartos: 3 
+Rua: Faith 
+Bairro: Aston 
+Cidade: Chulmleigh 
+Andares: 1
+
+Proprietario: Darragh Bentong 
+Preco: R$333000,000000 
+Numero de quartos: 3 
+Rua: Blue Lake 
+Bairro: Snow Neck 
+Cidade: Hoquiam 
+Não tem piscina
+
+
+Proprietario: Libbie Reilly 
+Preco: R$628000,000000 
+Numero de quartos: 4 
+Rua: Seymour Road 
+Bairro: West Cardoon 
+Cidade: Busselton 
+Tem elevador
+
+Proprietario: Nina Hunter 
+Preco: R$272000,000000 
+Numero de quartos: 2 
+Rua: Seymour Road 
+Bairro: Fiddlehead City 
+Cidade: Busselton 
+Não tem elevador
+
+
+Proprietario: Amani Riley 
+Preco: R$329000,000000 
+Numero de quartos: 4 
+Rua: Seymour Road 
+Bairro: West Cardoon 
+Cidade: Great Dunmow 
+Tem elevador
+
+Proprietario: Nina Hunter 
+Preco: R$666000,000000 
+Numero de quartos: 5 
+Rua: Heathan Forest 
+Bairro: Mount Woodruff 
+Cidade: Higham Ferrers 
+Tem piscina
+
+Proprietario: Simone Ashley 
+Preco: R$655000,000000 
+Numero de quartos: 3 
+Rua: West road 
+Bairro: Aston 
+Cidade: Newton-le-Willows 
+Andares: 2
+
+Proprietario: Georgina Hendrix 
+Preco: R$455000,000000 
+Numero de quartos: 4 
+Rua: Winterfield 
+Bairro: Aston 
+Cidade: Orford 
+Andares: 1
+
+Proprietario: Kurt Turnbull 
+Preco: R$1000000,000000 
+Numero de quartos: 6 
+Rua: Groove Park 
+Bairro: Fawn Neck 
+Cidade: Higham Ferrers 
+Tem piscina
+
+Proprietario: Libbie Reilly 
+Preco: R$462000,000000 
+Numero de quartos: 4 
+Rua: Tatton Road 
+Bairro: Amber Plaza 
+Cidade: Great Dunmow 
+Tem elevador
+
+Proprietario: Menaal Keeling 
+Preco: R$916000,000000 
+Numero de quartos: 3 
+Rua: Laburnum Grove 
+Bairro: Mount Woodruff 
+Cidade: Higham Ferrers 
+Não tem piscina
+
+
+Proprietario: Niyah Lewis 
+Preco: R$743000,000000 
+Numero de quartos: 4 
+Rua: Laburnum Grove 
+Bairro: Mount Cornflower 
+Cidade: Higham Ferrers 
+Não tem piscina
+
+
+Proprietario: Niyah Lewis 
+Preco: R$888000,000000 
+Numero de quartos: 4 
+Rua: Seymour Road 
+Bairro: Indigo Village 
+Cidade: Newton-le-Willows 
+Tem elevador
+
+Proprietario: Kurt Turnbull 
+Preco: R$1555000,000000 
+Numero de quartos: 6 
+Rua: Winterfield 
+Bairro: Upper Sunrise 
+Cidade: Orford 
+Andares: 3
+
+Proprietario: Simone Ashley 
+Preco: R$255000,000000 
+Numero de quartos: 3 
+Rua: Winland 
+Bairro: Sun Knigth 
+Cidade: Orford 
+Andares: 1
+
