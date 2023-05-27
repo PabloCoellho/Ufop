@@ -1,0 +1,166 @@
+\hypertarget{class_flow}{}\doxysection{Referência à classe Flow}
+\label{class_flow}\index{Flow@{Flow}}
+
+
+{\ttfamily \#include $<$flow.\+h$>$}
+
+Diagrama de heranças da classe Flow\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_flow}
+\end{center}
+\end{figure}
+\doxysubsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_flow_ac9975e144e606242748197798e87dd32}{Flow}} ()
+\item 
+\mbox{\hyperlink{class_flow_a29b196062af2aeac985f6a307279676a}{Flow}} (\mbox{\hyperlink{class_system}{System}} $\ast$, \mbox{\hyperlink{class_system}{System}} $\ast$)
+\item 
+virtual \mbox{\hyperlink{class_flow_a5991efa6e8cf88c4ef2125cc727db333}{$\sim$\+Flow}} ()
+\item 
+void \mbox{\hyperlink{class_flow_a1b02c7d5ec8e69a4183cb308811c414f}{set\+Source}} (\mbox{\hyperlink{class_system}{System}} $\ast$)
+\item 
+void \mbox{\hyperlink{class_flow_a7f49a7d2aaffdc768565ce1f388d1e32}{set\+Destination}} (\mbox{\hyperlink{class_system}{System}} $\ast$)
+\item 
+\mbox{\hyperlink{class_system}{System}} $\ast$ \mbox{\hyperlink{class_flow_ad3414435f50a4ff1621092420a2f33a3}{get\+Source}} ()
+\item 
+\mbox{\hyperlink{class_system}{System}} $\ast$ \mbox{\hyperlink{class_flow_a6abffc4da11119f608de76d0acb59daf}{get\+Destination}} ()
+\item 
+virtual double \mbox{\hyperlink{class_flow_a496068aa2ca60548e5159356170aabd3}{function}} ()=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributos Protegidos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_system}{System}} $\ast$ \mbox{\hyperlink{class_flow_a963ca162995d112f0f30322e2bb9de63}{source}}
+\item 
+\mbox{\hyperlink{class_system}{System}} $\ast$ \mbox{\hyperlink{class_flow_a183323f0b723a6958b7314bab2c549a1}{destination}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentação dos Construtores \& Destrutor}
+\mbox{\Hypertarget{class_flow_ac9975e144e606242748197798e87dd32}\label{class_flow_ac9975e144e606242748197798e87dd32}} 
+\index{Flow@{Flow}!Flow@{Flow}}
+\index{Flow@{Flow}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{Flow()}{Flow()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Flow\+::\+Flow (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3           \{}
+\DoxyCodeLine{4     \mbox{\hyperlink{class_flow_a963ca162995d112f0f30322e2bb9de63}{source}} = NULL; \textcolor{comment}{//systema de origem}}
+\DoxyCodeLine{5     \mbox{\hyperlink{class_flow_a183323f0b723a6958b7314bab2c549a1}{destination}} = NULL; \textcolor{comment}{//systema de destino}}
+\DoxyCodeLine{6 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_flow_a29b196062af2aeac985f6a307279676a}\label{class_flow_a29b196062af2aeac985f6a307279676a}} 
+\index{Flow@{Flow}!Flow@{Flow}}
+\index{Flow@{Flow}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{Flow()}{Flow()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Flow\+::\+Flow (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_system}{System}} $\ast$}]{s,  }\item[{\mbox{\hyperlink{class_system}{System}} $\ast$}]{d }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{8                               \{ \textcolor{comment}{//define os systemas de origem e destino}}
+\DoxyCodeLine{9     \mbox{\hyperlink{class_flow_a963ca162995d112f0f30322e2bb9de63}{source}} = s;}
+\DoxyCodeLine{10     \mbox{\hyperlink{class_flow_a183323f0b723a6958b7314bab2c549a1}{destination}} = d;}
+\DoxyCodeLine{11 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_flow_a5991efa6e8cf88c4ef2125cc727db333}\label{class_flow_a5991efa6e8cf88c4ef2125cc727db333}} 
+\index{Flow@{Flow}!````~Flow@{$\sim$Flow}}
+\index{````~Flow@{$\sim$Flow}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{$\sim$Flow()}{~Flow()}}
+{\footnotesize\ttfamily Flow\+::$\sim$\+Flow (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{13 \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentação dos métodos}
+\mbox{\Hypertarget{class_flow_a496068aa2ca60548e5159356170aabd3}\label{class_flow_a496068aa2ca60548e5159356170aabd3}} 
+\index{Flow@{Flow}!function@{function}}
+\index{function@{function}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{function()}{function()}}
+{\footnotesize\ttfamily virtual double Flow\+::function (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implementado em \mbox{\hyperlink{class_exponential_a9d3216dca7d5883a0fded3da1f5fe1c5}{Exponential}} e \mbox{\hyperlink{class_logistic_a4bdcb16fa9bd8572a7b690117ca2f6fa}{Logistic}}.
+
+\mbox{\Hypertarget{class_flow_a6abffc4da11119f608de76d0acb59daf}\label{class_flow_a6abffc4da11119f608de76d0acb59daf}} 
+\index{Flow@{Flow}!getDestination@{getDestination}}
+\index{getDestination@{getDestination}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{getDestination()}{getDestination()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_system}{System}} $\ast$ Flow\+::get\+Destination (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{27                             \{}
+\DoxyCodeLine{28     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_flow_a183323f0b723a6958b7314bab2c549a1}{destination}};}
+\DoxyCodeLine{29 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_flow_ad3414435f50a4ff1621092420a2f33a3}\label{class_flow_ad3414435f50a4ff1621092420a2f33a3}} 
+\index{Flow@{Flow}!getSource@{getSource}}
+\index{getSource@{getSource}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{getSource()}{getSource()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_system}{System}} $\ast$ Flow\+::get\+Source (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{23                        \{}
+\DoxyCodeLine{24     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_flow_a963ca162995d112f0f30322e2bb9de63}{source}};}
+\DoxyCodeLine{25 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_flow_a7f49a7d2aaffdc768565ce1f388d1e32}\label{class_flow_a7f49a7d2aaffdc768565ce1f388d1e32}} 
+\index{Flow@{Flow}!setDestination@{setDestination}}
+\index{setDestination@{setDestination}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{setDestination()}{setDestination()}}
+{\footnotesize\ttfamily void Flow\+::set\+Destination (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_system}{System}} $\ast$}]{d }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{19                                   \{}
+\DoxyCodeLine{20     \mbox{\hyperlink{class_flow_a183323f0b723a6958b7314bab2c549a1}{destination}} = d;}
+\DoxyCodeLine{21 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_flow_a1b02c7d5ec8e69a4183cb308811c414f}\label{class_flow_a1b02c7d5ec8e69a4183cb308811c414f}} 
+\index{Flow@{Flow}!setSource@{setSource}}
+\index{setSource@{setSource}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{setSource()}{setSource()}}
+{\footnotesize\ttfamily void Flow\+::set\+Source (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_system}{System}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{15                               \{}
+\DoxyCodeLine{16     \mbox{\hyperlink{class_flow_a963ca162995d112f0f30322e2bb9de63}{source}} = s;}
+\DoxyCodeLine{17 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentação dos dados membro}
+\mbox{\Hypertarget{class_flow_a183323f0b723a6958b7314bab2c549a1}\label{class_flow_a183323f0b723a6958b7314bab2c549a1}} 
+\index{Flow@{Flow}!destination@{destination}}
+\index{destination@{destination}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{destination}{destination}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_system}{System}}$\ast$ Flow\+::destination\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_flow_a963ca162995d112f0f30322e2bb9de63}\label{class_flow_a963ca162995d112f0f30322e2bb9de63}} 
+\index{Flow@{Flow}!source@{source}}
+\index{source@{source}!Flow@{Flow}}
+\doxysubsubsection{\texorpdfstring{source}{source}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_system}{System}}$\ast$ Flow\+::source\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\+:\begin{DoxyCompactItemize}
+\item 
+My\+Vensim/src/\mbox{\hyperlink{flow_8h}{flow.\+h}}\item 
+My\+Vensim/src/\mbox{\hyperlink{flow_8cpp}{flow.\+cpp}}\end{DoxyCompactItemize}

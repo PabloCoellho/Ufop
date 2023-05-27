@@ -1,0 +1,1 @@
+g++ src/lib/model.cpp src/lib/system.cpp src/lib/flow.cpp test/funcional/funcional_tests.cpp test/funcional/main.cpp -o bin/funcional_test.dll

@@ -1,0 +1,1 @@
+g++ *.cpp -o bin/unit_test.dll

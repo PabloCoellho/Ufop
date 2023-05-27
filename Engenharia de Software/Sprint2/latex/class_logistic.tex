@@ -1,0 +1,68 @@
+\hypertarget{class_logistic}{}\doxysection{Referência à classe Logistic}
+\label{class_logistic}\index{Logistic@{Logistic}}
+
+
+{\ttfamily \#include $<$flow.\+h$>$}
+
+Diagrama de heranças da classe Logistic\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_logistic}
+\end{center}
+\end{figure}
+\doxysubsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_logistic_ae137bd4c8e3d59f2860b89b4e8a5f43c}{Logistic}} ()
+\item 
+\mbox{\hyperlink{class_logistic_a66b0c8cb54157aaf95263122380039e9}{Logistic}} (\mbox{\hyperlink{class_system}{System}} $\ast$\mbox{\hyperlink{class_flow_a963ca162995d112f0f30322e2bb9de63}{source}}, \mbox{\hyperlink{class_system}{System}} $\ast$\mbox{\hyperlink{class_flow_a183323f0b723a6958b7314bab2c549a1}{destination}})
+\item 
+double \mbox{\hyperlink{class_logistic_a4bdcb16fa9bd8572a7b690117ca2f6fa}{function}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Outros membros herdados}
+
+
+\doxysubsection{Documentação dos Construtores \& Destrutor}
+\mbox{\Hypertarget{class_logistic_ae137bd4c8e3d59f2860b89b4e8a5f43c}\label{class_logistic_ae137bd4c8e3d59f2860b89b4e8a5f43c}} 
+\index{Logistic@{Logistic}!Logistic@{Logistic}}
+\index{Logistic@{Logistic}!Logistic@{Logistic}}
+\doxysubsubsection{\texorpdfstring{Logistic()}{Logistic()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Logistic\+::\+Logistic (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_logistic_a66b0c8cb54157aaf95263122380039e9}\label{class_logistic_a66b0c8cb54157aaf95263122380039e9}} 
+\index{Logistic@{Logistic}!Logistic@{Logistic}}
+\index{Logistic@{Logistic}!Logistic@{Logistic}}
+\doxysubsubsection{\texorpdfstring{Logistic()}{Logistic()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Logistic\+::\+Logistic (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_system}{System}} $\ast$}]{source,  }\item[{\mbox{\hyperlink{class_system}{System}} $\ast$}]{destination }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{44 :\mbox{\hyperlink{class_flow_ac9975e144e606242748197798e87dd32}{Flow}}(\mbox{\hyperlink{class_flow_a963ca162995d112f0f30322e2bb9de63}{source}}, \mbox{\hyperlink{class_flow_a183323f0b723a6958b7314bab2c549a1}{destination}})\{\};}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentação dos métodos}
+\mbox{\Hypertarget{class_logistic_a4bdcb16fa9bd8572a7b690117ca2f6fa}\label{class_logistic_a4bdcb16fa9bd8572a7b690117ca2f6fa}} 
+\index{Logistic@{Logistic}!function@{function}}
+\index{function@{function}!Logistic@{Logistic}}
+\doxysubsubsection{\texorpdfstring{function()}{function()}}
+{\footnotesize\ttfamily double Logistic\+::function (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implementa \mbox{\hyperlink{class_flow_a496068aa2ca60548e5159356170aabd3}{Flow}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{44                          \{}
+\DoxyCodeLine{45     \textcolor{keywordflow}{return} 0.01 * this-\/>\mbox{\hyperlink{class_flow_a6abffc4da11119f608de76d0acb59daf}{getDestination}}()-\/>\mbox{\hyperlink{class_system_ac6f5cf5f07a414398ac2ef5843531d1b}{getValue}}() * (1 -\/ this-\/>\mbox{\hyperlink{class_flow_a6abffc4da11119f608de76d0acb59daf}{getDestination}}()-\/>\mbox{\hyperlink{class_system_ac6f5cf5f07a414398ac2ef5843531d1b}{getValue}}() / 70);}
+\DoxyCodeLine{46 \}}
+
+\end{DoxyCode}
+
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\+:\begin{DoxyCompactItemize}
+\item 
+My\+Vensim/src/\mbox{\hyperlink{flow_8h}{flow.\+h}}\item 
+My\+Vensim/src/\mbox{\hyperlink{flow_8cpp}{flow.\+cpp}}\end{DoxyCompactItemize}

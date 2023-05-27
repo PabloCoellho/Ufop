@@ -1,0 +1,1 @@
+g++ src/lib/model.cpp src/lib/system.cpp src/lib/flow.cpp test/unit/mem_usage.cpp test/unit/unit_Flow.cpp test/unit/unit_Model.cpp test/unit/unit_System.cpp test/unit/main.cpp -o bin/unit_test.dll

@@ -1,0 +1,1 @@
+g++ src/lib/flow.cpp src/lib/model.cpp src/lib/system.cpp src/main.cpp -o bin/lib.dll

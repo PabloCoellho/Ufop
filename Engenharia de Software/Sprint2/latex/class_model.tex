@@ -1,0 +1,156 @@
+\hypertarget{class_model}{}\doxysection{Referência à classe Model}
+\label{class_model}\index{Model@{Model}}
+
+
+{\ttfamily \#include $<$model.\+h$>$}
+
+\doxysubsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_model_ae3b375de5f6df4faf74a95d64748e048}{Model}} ()
+\item 
+\mbox{\hyperlink{class_model_a9be0d0547256e211a881e797accee87d}{Model}} (\mbox{\hyperlink{class_system}{System}} $\ast$, \mbox{\hyperlink{class_flow}{Flow}} $\ast$)
+\item 
+virtual \mbox{\hyperlink{class_model_ad6ebd2062a0b823db841a0b88baac4c0}{$\sim$\+Model}} ()
+\item 
+double \mbox{\hyperlink{class_model_aac093b5786c285f175e1d69d78ae5ce3}{run}} (int, int, int)
+\item 
+void \mbox{\hyperlink{class_model_ae4d749689ba490e2a74d64bb10721a94}{add}} (\mbox{\hyperlink{class_system}{System}} $\ast$)
+\item 
+void \mbox{\hyperlink{class_model_a94757709637014384aa155189ada81e4}{add}} (\mbox{\hyperlink{class_flow}{Flow}} $\ast$)
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributos Protegidos}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \mbox{\hyperlink{class_flow}{Flow}} $\ast$ $>$ \mbox{\hyperlink{class_model_aa76c9411f1cf6da6f4c696b2feadcb1a}{flows}}
+\item 
+vector$<$ \mbox{\hyperlink{class_system}{System}} $\ast$ $>$ \mbox{\hyperlink{class_model_ac7dea8829149e597d2671dbc0a538bf7}{systems}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentação dos Construtores \& Destrutor}
+\mbox{\Hypertarget{class_model_ae3b375de5f6df4faf74a95d64748e048}\label{class_model_ae3b375de5f6df4faf74a95d64748e048}} 
+\index{Model@{Model}!Model@{Model}}
+\index{Model@{Model}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{Model()}{Model()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Model\+::\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{3 \{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_model_a9be0d0547256e211a881e797accee87d}\label{class_model_a9be0d0547256e211a881e797accee87d}} 
+\index{Model@{Model}!Model@{Model}}
+\index{Model@{Model}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{Model()}{Model()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Model\+::\+Model (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_system}{System}} $\ast$}]{s,  }\item[{\mbox{\hyperlink{class_flow}{Flow}} $\ast$}]{f }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5                               \{}
+\DoxyCodeLine{6     \mbox{\hyperlink{class_model_ac7dea8829149e597d2671dbc0a538bf7}{systems}}.push\_back(s);}
+\DoxyCodeLine{7     \mbox{\hyperlink{class_model_aa76c9411f1cf6da6f4c696b2feadcb1a}{flows}}.push\_back(f);}
+\DoxyCodeLine{8 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_model_ad6ebd2062a0b823db841a0b88baac4c0}\label{class_model_ad6ebd2062a0b823db841a0b88baac4c0}} 
+\index{Model@{Model}!````~Model@{$\sim$Model}}
+\index{````~Model@{$\sim$Model}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{$\sim$Model()}{~Model()}}
+{\footnotesize\ttfamily Model\+::$\sim$\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{10              \{}
+\DoxyCodeLine{11     \textcolor{comment}{//O destrutor deleta o espaço alocado para flow e system}}
+\DoxyCodeLine{12     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} it = \mbox{\hyperlink{class_model_aa76c9411f1cf6da6f4c696b2feadcb1a}{flows}}.begin(); it != \mbox{\hyperlink{class_model_aa76c9411f1cf6da6f4c696b2feadcb1a}{flows}}.end(); it++) }
+\DoxyCodeLine{13         \textcolor{keyword}{delete} *it;}
+\DoxyCodeLine{14     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} it = \mbox{\hyperlink{class_model_ac7dea8829149e597d2671dbc0a538bf7}{systems}}.begin(); it != \mbox{\hyperlink{class_model_ac7dea8829149e597d2671dbc0a538bf7}{systems}}.end(); it++)}
+\DoxyCodeLine{15         \textcolor{keyword}{delete} *it;}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentação dos métodos}
+\mbox{\Hypertarget{class_model_a94757709637014384aa155189ada81e4}\label{class_model_a94757709637014384aa155189ada81e4}} 
+\index{Model@{Model}!add@{add}}
+\index{add@{add}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Model\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_flow}{Flow}} $\ast$}]{f }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{23                       \{ \textcolor{comment}{//adiciona um flow no model}}
+\DoxyCodeLine{24     \mbox{\hyperlink{class_model_aa76c9411f1cf6da6f4c696b2feadcb1a}{flows}}.push\_back(f);}
+\DoxyCodeLine{25 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_model_ae4d749689ba490e2a74d64bb10721a94}\label{class_model_ae4d749689ba490e2a74d64bb10721a94}} 
+\index{Model@{Model}!add@{add}}
+\index{add@{add}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Model\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_system}{System}} $\ast$}]{s }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{19                         \{ \textcolor{comment}{//adiciona um system no model}}
+\DoxyCodeLine{20     \mbox{\hyperlink{class_model_ac7dea8829149e597d2671dbc0a538bf7}{systems}}.push\_back(s);}
+\DoxyCodeLine{21 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_model_aac093b5786c285f175e1d69d78ae5ce3}\label{class_model_aac093b5786c285f175e1d69d78ae5ce3}} 
+\index{Model@{Model}!run@{run}}
+\index{run@{run}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily double Model\+::run (\begin{DoxyParamCaption}\item[{int}]{start,  }\item[{int}]{finish,  }\item[{int}]{init\+Value }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{27                                                      \{}
+\DoxyCodeLine{28     \textcolor{comment}{//Run executa a juncao dos flows com os systems, e atualiza todos os valores}}
+\DoxyCodeLine{29     vector<double> values;}
+\DoxyCodeLine{30     \mbox{\hyperlink{class_system}{System}}* source;}
+\DoxyCodeLine{31     \mbox{\hyperlink{class_system}{System}}* destination;}
+\DoxyCodeLine{32     \textcolor{keywordtype}{int} size = \mbox{\hyperlink{class_model_aa76c9411f1cf6da6f4c696b2feadcb1a}{flows}}.size();}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = start; i < finish; i++)\{}
+\DoxyCodeLine{35         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j=0; j< size; j++)\{}
+\DoxyCodeLine{36             values.push\_back(\mbox{\hyperlink{class_model_aa76c9411f1cf6da6f4c696b2feadcb1a}{flows}}[j]-\/>function());}
+\DoxyCodeLine{37         \}}
+\DoxyCodeLine{38         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} k=0; k < size; k++)\{}
+\DoxyCodeLine{39             source = \mbox{\hyperlink{class_model_aa76c9411f1cf6da6f4c696b2feadcb1a}{flows}}[k]-\/>getSource();}
+\DoxyCodeLine{40             destination = \mbox{\hyperlink{class_model_aa76c9411f1cf6da6f4c696b2feadcb1a}{flows}}[k]-\/>getDestination();}
+\DoxyCodeLine{41             source-\/>\mbox{\hyperlink{class_system_a0fab907790a0a6ac4b4a9b934f3de278}{setValue}}(source-\/>\mbox{\hyperlink{class_system_ac6f5cf5f07a414398ac2ef5843531d1b}{getValue}}() -\/ values[k]);}
+\DoxyCodeLine{42             destination-\/>\mbox{\hyperlink{class_system_a0fab907790a0a6ac4b4a9b934f3de278}{setValue}}(destination-\/>\mbox{\hyperlink{class_system_ac6f5cf5f07a414398ac2ef5843531d1b}{getValue}}() + values[k]);}
+\DoxyCodeLine{43         \}}
+\DoxyCodeLine{44         values.clear();}
+\DoxyCodeLine{45     \}}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47     \textcolor{keywordflow}{return} values[finish];}
+\DoxyCodeLine{48 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentação dos dados membro}
+\mbox{\Hypertarget{class_model_aa76c9411f1cf6da6f4c696b2feadcb1a}\label{class_model_aa76c9411f1cf6da6f4c696b2feadcb1a}} 
+\index{Model@{Model}!flows@{flows}}
+\index{flows@{flows}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{flows}{flows}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{class_flow}{Flow}}$\ast$$>$ Model\+::flows\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_model_ac7dea8829149e597d2671dbc0a538bf7}\label{class_model_ac7dea8829149e597d2671dbc0a538bf7}} 
+\index{Model@{Model}!systems@{systems}}
+\index{systems@{systems}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{systems}{systems}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{class_system}{System}}$\ast$$>$ Model\+::systems\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\+:\begin{DoxyCompactItemize}
+\item 
+My\+Vensim/src/\mbox{\hyperlink{model_8h}{model.\+h}}\item 
+My\+Vensim/src/\mbox{\hyperlink{model_8cpp}{model.\+cpp}}\end{DoxyCompactItemize}
