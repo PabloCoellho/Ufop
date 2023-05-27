@@ -1,0 +1,81 @@
+Você também deve escrever documentação para os seguintes pontos:
+- como você lida com os comentários;
+- como você lida com strings;
+- Manipulação de erros;
+- manipulação de fim de arquivo;
+- outras características interessantes do seu lexer.
+
+
+
+##  LIDANDO COM COMENTÁRIOS
+Para lidar com os comentários criei a regra para entrar na função, que é caso for analisado
+o símbolo de abertuda de comentário "/*", a partir disso entra na função "comentario".
+Ao entrar na função "comentario" haverão 5 possibilidades de casamento:
+
+Na primeira verifica se o caractere analisado no momento é o símbolo para fechar o comentário, 
+se casar com ele verifica ainda algumas possibilidades de match para caso tenha mais de um 
+comentário aberto, na primeira possibilidade verifica a lista de posição de comentários, se ela
+tiver vazia, o comentário foi concluido corretamente, caso tiver sido aberto outro comentário,
+ele também deve ser fechado, com isso passa para a proxima possibilidade, que verifica a existência
+de comentários aninhados. Cada comentário interno iniciado é adicionado no início da lista, sendo assim,
+ao encontrar um fechamento de comentário, ele será do último comentário aberto, que estará no início da
+lista e, portanto, deve ser retidado. Se nao casar com nenhuma dessas duas possibilidades casa com a
+última, que é coringa e retorna o erro "erro na leitura do comentario".
+
+Na segunda verifica se há outra abertura de comentário, ou seja, "um comentário
+dentro do outro", com isso é necessário lidar com cada comentário que for abertado.
+Assim, pega a lista atual que marca os comentário abertos e adiciona em sua primeira posição
+o local em que o comentário foi iniciado "lex_start_p". O restante da lista permanece da maneira 
+que está, após isso é feita uma chamada recursiva da função "comentario".
+
+No terceira possibilidade de casamento verifica se está pulando para uma nova linha no comentário, 
+se casar, a função "new_line" atualiza a posição armazenada no buffer na contagem de linhas e a 
+execução da função "comentario" continua.
+
+Na quarta verifica o fim do arquivo, caso encontrar o final do arquivo significa que o comentário 
+não terminou, ou seja, abriu um comentário que não foi fechado. Com isso, é reportado um erro.
+
+Na quinta e última possibilidade tem-se o coringa, se não casou com as possibilidades acima, vai 
+casar com o coringa, ou seja, ignorar o que está sendo analisado no momento e continuar a execução
+da função "comentario" normalmente. 
+
+
+
+##  LINDANDO COM STRINGS
+Para lidar com as strings, a maneira é um pouco semelhante com a trativa dos comentários, porém a 
+regra para entrar na função é '"' e tem-se a função "string". Neste caso, diferentes possibilidades 
+são analisadas, possibilidades específicas para que cada uma delas tenha uma tratativa diferente.
+As possibilidades são: se a string for fechada, se econtrar um "\\n", se encontrar um "\\t",
+se encontrar '\\\"', se encontrar "\\\\", se encontrar '"\\^" (['@' 'A'-'Z'] as x)', se encontrar
+'"\\^" (['a'-'z'] as x)', se encontrar '"\\" (digit digit digit as x)', se encontrar 
+'"\\" ([' ' '\t' '\n'] + as x)', se encontrar '"\\" _ as x', se encontrar '[^ '\\' '"'] + as x' e
+na última possibilidade da função verifica-se também, como na função "comentario", o fim do arquivo, 
+que se achado antes da string ter terminado, antes dela ser fechada com '"', é retornado um erro em 
+que a string não terminou.
+
+
+
+##  MANIPULAÇÃO DE ERROS
+Na manipulação de erros, tem-se o "illegal_character" que um caracter é ilegal quando ele não deu 
+match com nenhuma das regras do parse. Com isso, é usada a regra coringa e retorna que o caractere 
+é ilegal. Tem o "unterminated_comment", que é usado na regra do comentário e ocorre quando encontra-se
+o fim do arquivo antes do comentário ser finalizado. Tem o "unterminated_string" que é quando encontra-se
+o fim do arquivo antes da string ser terminada. Tem o "illegal_escape" que é usado na função "string" caso
+uma sequencia de caracteres ilegais forem analisados, ou seja, a sequência não casou com nenhuma das regras
+que estão acima na função "string", com isso, retorna erro. 
+
+
+
+##  MANIPULAÇÃO DE FIM DE ARQUIVO
+A manipulação de fim de arquivo ocorre de forma normal, quando ele casa nas regras do 
+'rule token = parse', e de forma diferente quando ela casa em uma das funções, pois, se o arquivo 
+terminar no 'rule token = parse', esta certo. Porém, se o arquivo terminar no meio de um comentário 
+ou de uma string, está errado, pois, o arquivo terminou sem que o comentário ou a string terminasse 
+(sem que seus respectivos símbolos de fechamento ocorresse).
+
+
+
+##  OUTRAS INFORMAÇÕES
+São usadas também duas tratativas na função string, que são elas, a "str_incr_linenum" que ocorre caso
+uma nova linha for adicionada no meio de uma string e a "append_char" que adiciona um caractere na string
+que está sendo analisada no momento.

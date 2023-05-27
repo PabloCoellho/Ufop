@@ -1,0 +1,9 @@
+lib: [
+  "_build/install/default/lib/tiger-lexer/META"
+  "_build/install/default/lib/tiger-lexer/dune-package"
+  "_build/install/default/lib/tiger-lexer/opam"
+]
+doc: [
+  "_build/install/default/doc/tiger-lexer/LICENSE"
+  "_build/install/default/doc/tiger-lexer/README.md"
+]

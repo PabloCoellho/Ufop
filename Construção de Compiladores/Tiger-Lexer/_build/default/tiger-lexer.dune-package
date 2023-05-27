@@ -1,0 +1,4 @@
+(lang dune 3.6)
+(name tiger-lexer)
+(sections (lib .) (doc ../../doc/tiger-lexer))
+(files (lib (META dune-package opam)) (doc (LICENSE README.md)))
