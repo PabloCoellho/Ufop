@@ -2,7 +2,7 @@
 
 Este repositório contém uma compilação de projetos e algoritmos desenvolvidos durante o curso de Graduação em Ciência da Computação pela Universidade Federal de Ouro Preto (Ufop).
 
-## Grade Curricular
+### Grade Curricular
 
 Abaixo, é possível visualizar a grade curricular do curso:
 
@@ -12,6 +12,6 @@ Abaixo, é possível visualizar a grade curricular do curso:
 
 </div>
 
-## Projetos e Algoritmos
+### Projetos e Algoritmos
 
 Durante o curso, foram desenvolvidos diversos projetos e algoritmos que abrangem uma ampla gama de tópicos e disciplinas acadêmicas. Para acessar esses projetos, basta navegar pelas pastas deste repositório. Aqui, encontra-se uma seleção representativa dos trabalhos.
